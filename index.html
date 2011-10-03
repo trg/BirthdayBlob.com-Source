@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Add your Facebook Friends' Birthdays to Google Calendar | Birthday Blob</title>
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+        <script src="http://connect.facebook.net/en_US/all.js"></script>
+        <script src="/main.js"></script>
+        <link rel="stylesheet" type="text/css" href="/style.css" />
+        <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Cabin' rel='stylesheet' type='text/css'>
+
+        <link rel="icon" type="image/gif" href="/images/favicon.gif">
+             
+        <script type="text/javascript">
+
+          var _gaq = _gaq || [];
+          _gaq.push(['_setAccount', 'UA-22872490-1']);
+          _gaq.push(['_trackPageview']);
+
+          (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+          })();
+
+        </script>
+        
+                
+       
+    </head>
+    <body>
+
+        <div id="fb-root"></div>
+        
+       <div id="wrapper">
+                        
+            <table>
+                <tr>
+                    <td><h1>Birthday Blob</h1></td>
+                    <td style="padding-left:50px">
+                        <fb:login-button class="logged-out" perms="friends_birthday"><span id='fbconn'>Connect with Facebook</span></fb:login-button> 
+                    </td>
+                </tr>
+                <tr class='logged-in'>
+                    <td colspan="2">
+                        <fb:like href="http://birthdayblob.com" show_faces="false" width="300" font=""></fb:like>
+                    </td>
+                </tr>
+
+            </table>
+
+            <div class="toggle-bar logged-in">
+                <span class='show'>[+] Show Charts &amp; Stats</span>
+                <span class='hide'>[-] Hide Charts &amp; Stats</span>
+            </div>           
+
+            <div id="chart-area">
+
+                <div id="bar-chart"></div>
+
+                <div id="stat-boxes">
+                
+                    <div id="friend-count">
+                        <div class="stat"></div>
+                        <div class="info">friends w/ birthdays</div>
+                    </div>
+
+                    <div id="popular-year">
+                        <div class="stat"></div>
+                        <div class="info">most popular year</div>
+                    </div>
+
+                </div>
+
+            </div>
+    
+            <div id="birthday-table"></div>
+
+            <p class='logged-out'>
+                Birthday Blob allows you to view and selectively add your friends birthdays to your Google Calendar.       
+            </p>
+
+            <h2 style="text-align:center;width:100%" class="logged-out"><a href="#" onclick='$("#fbconn").click();'>Click here to begin!</a></h2>
+
+            <p>
+                <fb:like href="http://birthdayblob.com" show_faces="false" width="300" font=""></fb:like>
+            </p>                
+
+            <p class='logged-in'>
+                Think this is cool?  Why not check out my other Facebook venture, a little social gaming site called <a target="_blank" href="http://bitniblet.com">bitniblet</a>!
+            </p>
+        
+            <p style="font-size: x-small"><a target="_blank" href="/pp-tos-faq.html">FAQ / ToS / Privacy / Credits</a></p>
+        </div>
+
+        <script>
+
+                $(document).ready(function() {
+                    Global.init();
+                    Global.init_home_page();
+                });
+        </script>
+
+    </body>
+</html>

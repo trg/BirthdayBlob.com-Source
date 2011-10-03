@@ -1,0 +1,104 @@
+body {
+	font-family: 'Cabin', Helvetica, Arial, sans-serif;
+	font-size: 15px;
+	line-height: 25px;    
+    color: #333333;
+}
+
+h1, h2, h3, h4, h5 {
+	font-family: 'Lobster', Georgia, Times, serif; 
+    color: #3B5998;
+}
+
+h3 {
+    margin-top: 30px;
+    margin-bottom: 4px;
+}
+
+a {
+    text-decoration: none;
+    color: #3B5998;
+}
+
+.logged-in { display: none }
+
+#chart-area {
+    padding: 20px 10px;
+    display: none;
+}
+
+p {
+    padding: 10px;
+}
+
+#chart-area img {
+    margin: 0 auto;
+    display: block;
+}
+
+#wrapper {
+    width: 500px;
+    margin: 0 auto;
+}
+.row {
+    padding: 3px 10px;
+    overflow: auto;
+}
+.row .name {
+    float: left;
+    width: 330px;
+    overflow: hidden;
+}
+.row .name img {
+    height: 20px;
+    width: 20px;
+    margin: -3px 10px 0 0;
+    vertical-align: middle;
+}
+.row .bday,
+.row .year {
+    float: right;
+    width: 70px;
+    text-align: right;
+}
+
+/* Toggle Bar */
+
+.toggle-bar {
+    margin-top: 10px;
+    padding: 2px 10px;
+    background-color: #eee;
+    font-size: 12px;
+    -moz-border-radius: 3px;
+    border-radius: 3px; 
+
+}
+.toggle-bar span {
+    color: #3B5998;
+    cursor: pointer;
+}
+.toggle-bar .hide {
+    display: none;
+}
+
+/* Stat Boxes */
+#stat-boxes {
+    clear: both;
+    overflow: auto;
+}
+#stat-boxes > div {
+    float: left;
+    width: 130px;
+    padding: 50px 50px 0px 50px;
+}
+#stat-boxes .stat {
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    color: #3B5998;
+}
+#stat-boxes .info {
+    font-size: 11px;
+    text-align: center;
+    color: #d1d1d1;
+}
